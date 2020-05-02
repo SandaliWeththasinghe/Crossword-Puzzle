@@ -1,0 +1,23 @@
+.container,.crosswordDisplay {
+  background-color: rgb(99, 100, 201);
+}
+
+.square {
+  height: 50px;
+  width: 50px;
+  /* background-color: aqua; */
+  border: 1px solid black;
+}
+
+.square-fill {
+  height: 50px;
+  width: 50px;
+  background-color: white;
+  border: 1px solid black;
+}
+
+.char {
+  width: 45px;
+  height: 29px;
+  border: none;
+}

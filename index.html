@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./index.css">
+  <title>Crossword Puzzle</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+</head>
+<body>
+
+  <div class="container">
+    <div class="container crosswordDisplay">
+
+      <div class="row">
+        <!-- Create & Play buttons required for user generated crossword - disabled for Proscribed questions -->
+        <div class="btn btn-default disabled" id="btnCreate">Create</div>
+        <div class="btn btn-default disabled" id="btnPlay">Play</div>
+          
+        <div class="btn btn-default" id="btnReset">Reset</div>
+        <div class="btn btn-default" id="btnCheck">Check Answers</div>
+      </div>
+
+      <div class="center crossword" id="crossword">
+
+        <!-- Row1 -->
+        <div class="row">
+
+          <div class="square"></div>
+          <div class="square"></div>
+          <div class="square"></div>
+          <div class="square"></div>
+          <div class="square-fill">
+            <input type="text" class="char" maxlength="1" data-letter="S" placeholder="">  
+            <span class="num">1</span>
+          </div>
+          <div class="square"></div>
+          <div class="square"></div>
+          <div class="square"></div>
+          <div class="square"></div>
+          <div class="square"></div>
+          
+        </div>
+
+  <!-- row2 -->
+        <div class="row">
+
+          <div class="square"></div>
+          <div class="square"></div>
+          <div class="square"></div>
+          <div class="square"></div>
+          <div class="square-fill">
+            <input type="text" class="char" maxlength="1" data-letter="I" placeholder=""> 
+            <span class="num"></span>
+          </div>
+          <div class="square"></div>
+          <div class="square"></div>
+          <div class="square"></div>
+          <div class="square"></div>
+          <div class="square"></div>
+
+        </div>
+
+  <!-- row3 -->
+        <div class="row">
+
+          <div class="square"></div>
+          <div class="square"></div>
+          <div class="square"></div>
+          <div class="square-fill">
+            <input type="text" class="char" maxlength="1" data-letter="H" placeholder="">
+            <span class="num">2</span>
+          </div>
+          <div class="square-fill">
+            <input type="text" class="char" maxlength="1" data-letter="R" placeholder="">
+            <span class="num"></span>
+          </div>
+          <div class="square"></div>
+          <div class="square"></div>
+          <div class="square"></div>
+          <div class="square"></div>
+          <div class="square"></div>
+
+        </div>
+
+        <!-- row4 -->
+        <div class="row">
+
+          <div class="square"></div>
+          <div class="square"></div>
+          <div class="square-fill">
+            <input type="text" class="char" maxlength="1" data-letter="S" placeholder="">
+            <span class="num">3</span>
+          </div>
+          <div class="square"></div>
+          <div class="square-fill"><input type="text" class="char" maxlength="1" data-letter="I" placeholder="">
+            <span class="num"></span></div>
+          <div class="square"></div>
+          <div class="square"></div>
+          <div class="square"></div>
+          <div class="square"></div>
+          <div class="square"></div>
+
+        </div>
+
+        <!-- row5 -->
+        <div class="row">
+
+          <div class="square-fill">
+            <input type="text" class="char" maxlength="1" data-letter="U" placeholder="">
+            <span class="num">4</span>
+          </div>
+          <div class="square-fill">
+            <input type="text" class="char" maxlength="1" data-letter="R" placeholder="">
+            <span class="num"></span>
+          </div>
+          <div class="square-fill">
+            <input type="text" class="char" maxlength="1" data-letter="A" placeholder="">
+            <span class="num"></span>
+          </div>
+          <div class="square-fill">
+            <input type="text" class="char" maxlength="1" data-letter="N" placeholder="">
+            <span class="num"></span>
+          </div>
+          <div class="square-fill">
+            <input type="text" class="char" maxlength="1" data-letter="U" placeholder="">
+            <span class="num"></span>
+          </div>
+          <div class="square-fill">
+            <input type="text" class="char" maxlength="1" data-letter="S" placeholder="">
+            <span class="num"></span>
+          </div>
+          <div class="square"></div>
+          <div class="square-fill">
+            <input type="text" class="char" maxlength="1" data-letter="C" placeholder="">
+            <span class="num">5</span>
+          </div>
+          <div class="square"></div>
+          <div class="square"></div>
+
+        </div>
+
+        <!-- row6 -->
+        <div class="row">
+
+          <div class="square-fill">
+            <input type="text" class="char" maxlength="1" data-letter="B" placeholder="">
+            <span class="num"></span>
+          </div>
+          <div class="square"></div>
+          <div class="square-fill">
+            <input type="text" class="char" maxlength="1" data-letter="T" placeholder="">
+            <span class="num"></span>
+          </div>
+          <div class="square"></div>
+          <div class="square-fill">
+            <input type="text" class="char" maxlength="1" data-letter="S" placeholder="">
+            <span class="num"></span>
+          </div>
+          <div class="square"></div>
+          <div class="square"></div>
+          <div class="square-fill">
+            <input type="text" class="char" maxlength="1" data-letter="O" placeholder="">
+            <span class="num">6</span>
+          </div>
+          <div class="square-fill">
+            <input type="text" class="char" maxlength="1" data-letter="W" placeholder="">
+            <span class="num"></span>
+          </div>
+          <div class="square-fill">
+            <input type="text" class="char" maxlength="1" data-letter="L" placeholder="">
+            <span class="num"></span>
+          </div>
+
+        </div>
+
+        <!-- row7 -->
+        <div class="row">
+
+          <div class="square-fill">
+            <input type="text" class="char" maxlength="1" data-letter="V" placeholder="">
+            <span class="num"></span>
+          </div>
+          <div class="square"></div>
+          <div class="square-fill">
+            <input type="text" class="char" maxlength="1" data-letter="U" placeholder="">
+            <span class="num"></span>
+          </div>
+          <div class="square"></div>
+          <div class="square"></div>
+          <div class="square"></div>
+          <div class="square"></div>
+          <div class="square-fill">
+            <input type="text" class="char" maxlength="1" data-letter="M" placeholder="">
+            <span class="num"></span>
+          </div>
+          <div class="square"></div>
+          <div class="square"></div>
+
+        </div>
+
+        <!-- row8 -->
+        <div class="row">
+
+          <div class="square"></div>
+          <div class="square"></div>
+          <div class="square-fill">
+            <input type="text" class="char" maxlength="1" data-letter="R" placeholder="">
+            <span class="num">7</span>
+          </div>
+          <div class="square-fill">
+            <input type="text" class="char" maxlength="1" data-letter="E" placeholder="">
+            <span class="num"></span>
+          </div>
+          <div class="square-fill">
+            <input type="text" class="char" maxlength="1" data-letter="D" placeholder="">
+            <span class="num"></span>
+          </div>
+          <div class="square-fill">
+            <input type="text" class="char" maxlength="1" data-letter="G" placeholder="">
+            <span class="num"></span>
+          </div>
+          <div class="square-fill">
+            <input type="text" class="char" maxlength="1" data-letter="I" placeholder="">
+            <span class="num"></span>
+          </div>
+          <div class="square-fill">
+            <input type="text" class="char" maxlength="1" data-letter="A" placeholder="">
+            <span class="num"></span>
+          </div>
+          <div class="square-fill">
+            <input type="text" class="char" maxlength="1" data-letter="N" placeholder="">
+            <span class="num"></span>
+          </div>
+          <div class="square-fill">
+            <input type="text" class="char" maxlength="1" data-letter="T" placeholder="">
+            <span class="num"></span>
+          </div>
+
+        </div>
+
+        <!-- row9 -->
+        <div class="row">
+
+          <div class="square"></div>
+          <div class="square"></div>
+          <div class="square-fill">
+            <input type="text" class="char" maxlength="1" data-letter="N" placeholder="">
+            <span class="num"></span>
+          </div>
+          <div class="square"></div>
+          <div class="square"></div>
+          <div class="square"></div>
+          <div class="square"></div>
+          <div class="square"></div>
+          <div class="square"></div>
+          <div class="square"></div>
+
+        </div>
+
+      </div>      
+
+    </div>
+
+  </div>
+
+  <script src="https://code.jquery.com/jquery-3.4.1.js" integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU=" crossorigin="anonymous"></script>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+
+  <script src="app.js"></script>
+  
+</body>
+</html>
